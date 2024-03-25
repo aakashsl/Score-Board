@@ -22,16 +22,23 @@
             <th style="background-color: cadetblue;">S No</th>
             <th style="background-color: cadetblue;">Team Name</th>
             <th style="background-color: cadetblue;">Score</th>
+            <th style="background-color: cadetblue;">Place</th>
          </tr>
          <tbody>
             {% for row in data[0:] %}
 
             <tr>
                {% for cell in row %}
+               {% if cell=="Not Selected "%}
+               <td style="background-color: rgb(255, 0, 0); color: white;">{{ cell }}</td>
+               
+               {% else %}
                <td style="background-color: rgb(160, 203, 189);">{{ cell }}</td>
+               {% endif %}
                {% endfor %}
             </tr>
             {% endfor %}
+
          </tbody>
       </table>
    </div>
