@@ -1,5 +1,5 @@
 {
-   "name": "EQ Save Bed",
+   "name": "Score Board",
    "version": 2,
    "builds": [{
        "src": "*py",
